@@ -1,0 +1,30 @@
+<nav>
+  <% if (user) { %>
+    <div class="navig-header">
+      <div class="listingsnav-container">
+        <a href="/listings">All Listings</a>
+        <a href="/listings/new">Add New Listing</a>
+      </div>
+      <div class="signings-container">
+        <div class="push-right">
+        <a href="/auth/sign-out">Sign Out</a>
+      </div>
+      </div>
+    </div>
+    <% } else { %>
+      <div class="navig-header">
+        <div class="listingsnav-container"></div>
+        <div class="title-container">
+          <h1>Happy Snaps</h1>
+        </div>
+        <div class="signings-container">
+          <div class="push-right">
+            <a href="/auth/sign-in">Sign In</a>
+            <a href="/auth/sign-up">Sign Up</a>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <% } %>
+</nav>

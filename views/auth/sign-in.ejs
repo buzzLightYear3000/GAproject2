@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Sign In</title>
+  <style>
+    body {
+      background-image: url('https://www.ingemorath.org/wp-content/uploads/2010/05/Inge_Llama_featured_image-528x576.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100vw 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class=sign-in-page>
+    <div class="sign-in-form-container-1">
+      <div class="sign-in-form-container-2">
+        <h1>Sign in</h1>
+        <form action="/auth/sign-in" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" name="username" id="username" required />
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" required />
+          <button type="submit">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <body>

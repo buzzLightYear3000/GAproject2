@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.sign-in-page,
+.signup-page,
+.homepage>h1 {
+    color: black;
+}
+
+
+.sign-in-page,
+.signup-page,
+.homepage>h2 {
+    color: black;
+
+}
+
+.sign-in-page,
+.signup-page,
+.homepage>a {
+    color: black;
+}
+
+
+.homepagetitle{
+    text-align: center;
+    font-size:100px;
+    margin-top: 10px;
+    height: fit-content;
+}
+
+.signlinks {
+    display: flex;
+}
+
+.signup-page,
+.sign-in-page {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.signup-form-container-1,
+.sign-in-form-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form-container-2,
+.sign-in-form-container-2 {
+    padding: 10px 30px 20px;
+    border: 1px solid gray;
+}
+
+.signup-form-container-2>h1,
+.sign-in-form-container-2>h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.signup-form-container-2>form,
+.sign-in-form-container-2>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #182B2A;
+    color: #FBF6C0;
+
+}
+
+a {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 5px;
+    color: #FBF6C0;
+
+}
+
+.navig-header {
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    justify-content: space-between;
+
+}
+
+.listingsnav-container {
+    justify-content: space-between;
+}
+
+.signings-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.picture-name,
+.pic-title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.all-pic-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-title>h1 {
+    text-align: center;
+}
+
+.gridimage ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+.allimage>img {
+    width: 20%;
+    height: 20%;
+}
+
+.gridimage>ul {
+    list-style: none;
+
+}
+
+.new-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.new-container-1 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-container-2 {
+    padding: 10px 30px 20px;
+    border: 1px solid gray;
+}
+
+
+.new-container-2>h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.new-container-2>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.edit-container-1 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-container-2 {
+    padding: 10px 30px 20px;
+    border: 1px solid gray;
+}
+
+
+.edit-container-2>h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.edit-container-2>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-image {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.edit-delete {
+    display: flex;
+    align-items: center;
+}
+
+.edit>a {
+    margin-top: 10px;
+}
+
+
+input {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 9px;
+    margin: 7px 0;
+    width: 13em;
+    padding: 6px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    color: #182B2A;
+    font-weight: bold;
+    background-color: #FBF6C0;
+    padding: 7px 15px;
+    margin: 10px 0;
+}

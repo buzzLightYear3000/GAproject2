@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>All listings</title>
+</head>
+
+<body>
+  <% if (user) { %>
+      <%- include('../partials/_navbarlistings.ejs') %>
+      <div class="all-pic-page">
+        <div class="pic-title">
+        <h1>All Pictures</h1>
+      </div>
+        <div class="all-pics-grid">
+          <div class="gridimage">
+          <ul>
+            <% listings.forEach(listing=> { %>
+              <li>
+                <a href='../listings/<%= listing._id %>'>
+                  <img src='<%=listing.image%>' alt="error" class="allimage" width="370px" height="370px">
+                </a>
+              </li>
+              <% }); %>
+          </ul>
+        </div>
+        </div>
+      </div>
+        <% } else { %>
+          <%=res.redirect(' /')%>
+            <% } %>
+</body>
+
+</html>

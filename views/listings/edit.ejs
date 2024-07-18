@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Edit Listing</title>
+</head>
+
+<body>
+  <%- include('../partials/_navbarsignings.ejs') %>
+    <%- include('../partials/_navbarlistings.ejs') %>
+      <% if(user) { %>
+        <div class="edit-page">
+          <div class="edit-container-1">
+            <div class="edit-container-2">
+              <h1>edit the listing!</h1>
+              <form action="/listings/<%=listing._id%>?_method=PUT" method="POST">
+                <label for="picname">Name:</label>
+                <input type="text" name="picname" id="picname" value="<%= listing.picname %>" required />
+
+                <label for="photographer">Photographer:</label>
+                <input type="text" name="photographer" id="photographer" value="<%= listing.photographer %>" required />
+
+                <label for="image">Image:</label>
+                <input type="text" name="image" id="image" value="<%= listing.image %>" required />
+
+                <button type="submit">Edit Picture</button>
+              </form>
+              <% } else { %>
+                <%=res.redirect(' /listings/:listingId')%>
+                  <% } %>
+            </div>
+          </div>
+        </div>
+
+
+</body>
+
+</html>

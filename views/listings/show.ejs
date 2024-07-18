@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>
+    Show by ID
+  </title>
+</head>
+
+<body>
+    <%- include('../partials/_navbarlistings.ejs') %>
+      <div class="show-body">
+        <div class="picture-name">
+          <h1>
+            <%= listing.picname %>
+          </h1>
+        </div>
+        <div class="picture-image">
+          <p> <img src='<%=listing.image%>'> </p>
+          <p>Photographer: <%=listing.photographer%></p>
+        </div>
+        <% if(listing.owner._id.equals(user._id)){ %>
+ <div class="edit-delete">
+          <div class="delete">
+            <form action="/listings/<%=listing._id%>?_method=DELETE" method="POST">
+              <button type="submit">Delete</button>
+            </form>
+          </div>
+          <div class="edit">
+            <a href="/listings/<%= listing._id %>/edit">Edit </a>
+          </div>
+        </div>
+       <% }%>
+       
+      </div>
+</body>
+<% %>
+
+</html>

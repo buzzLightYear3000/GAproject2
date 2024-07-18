@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title>Create a Listing</title>
+
+</head>
+
+<body>
+<%- include('../partials/_navbarlistings.ejs') %>
+  <div class="new-page">
+    <div class="new-container-1">
+      <div class="new-container-2">
+        <h1>Create a New Listing!</h1>
+        <form action="/listings" method="POST">
+          <label for="picname">Name:</label>
+          <input type="text" name="picname" id="picname" required />
+
+          <label for="photographer">Photographer:</label>
+          <input type="text" name="photographer" id="photographer" required />
+
+          <label for="image">Image:</label>
+          <input type="text" name="image" id="image" required />
+
+          <button type="submit">Add Picture</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </body>
+
+</html>
